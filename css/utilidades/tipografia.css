@@ -1,9 +1,45 @@
-.texto-grande{
-  font-size: 64px;
-  line-height: 1.125;
+.font-1{
+ font: 600 4rem/1.125 sans-serif;
 }
 
-.texto-medio{
-  font-size: 24px;
-  line-height: 1.5;
+.font-2{
+  font: 600 2rem/1.25 sans-serif;
+ }
+
+ .font-3{
+  font: 500 2rem/1.25 sans-serif;
+ }
+
+.font-4{
+  font: 400 1.5rem/1.5 sans-serif;
+}
+
+.font-5{
+  font: 500 1.5rem/1.5 sans-serif;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-6{
+  font: 400 1.125rem/1.35 sans-serif;
+}
+
+.font-7{
+  font: 600 1.125rem/1.35 sans-serif;
+}
+
+.font-8{
+  font: 500 1.125rem/1.35 sans-serif;
+}
+
+.font-9{
+  font: 400 1rem/1.5 sans-serif;
+}
+
+.font-10{
+  font: 400 0.875rem/1.43 sans-serif;
+}
+
+.font-11{
+  font: 400 0.75rem/1.35 sans-serif;
 }
