@@ -5,21 +5,20 @@
 
 .bicicleta-lista h2{
   margin-bottom: 40px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bicicleta-lista ul{
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   max-width: 1400px; /*Se há 'max-width' sempre deve ter as margin-left e rigth*/
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto; /*Criar barra scroll quando necessário para uma parte específica do site*/
+}
+
+.bicicleta-lista li{
+  min-width: 280px;
 }
 
 .bicicleta-lista a{
@@ -43,8 +42,23 @@
   width: 12px;
   margin-right: 8px;
   background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.bicicleta-lista a:hover h3::before{
+  width: 24px;
 }
 
 .bicicleta-lista li span{
   padding-left: 20px;
+}
+
+@media (max-width: 800px){
+  .bicicleta-lista{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .bicicleta-lista ul{
+    gap: 25px;
+  }
 }
