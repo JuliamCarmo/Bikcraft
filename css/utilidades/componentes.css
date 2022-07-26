@@ -1,13 +1,15 @@
-.conteiner{
-  box-sizing: border-box; /*adiciona os demais espaços(padding ou margin) ao max-width*/
+.conteiner {
+  box-sizing: border-box;
+  /*adiciona os demais espaços(padding ou margin) ao max-width*/
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto; /*margin-left e margin-right -> alinham os itens ao centro*/
+  margin-left: auto;
+  /*margin-left e margin-right -> alinham os itens ao centro*/
   margin-right: auto;
 }
 
-.botao{
+.botao {
   display: inline-block;
   padding: 16px 32px;
   background: linear-gradient(#ffbf00, #f2a50c);
@@ -18,13 +20,35 @@
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
-.botao:hover{
+.botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
-@media (max-width: 600px){
-  .botao{
+@media (max-width: 600px) {
+  .botao {
     padding: 12px 16px;
     font-size: 1rem;
   }
+}
+
+.link {
+  display: inline-block;
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0%;
+  background-color: var(--cor-p1);
+  transition: 0.3s;
+  position: absolute;
+}
+
+.link:hover:after {
+  width: 100%;
 }
