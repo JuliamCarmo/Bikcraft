@@ -1,0 +1,50 @@
+.bicicleta-lista{
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicicleta-lista h2{
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicicleta-lista ul{
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  max-width: 1400px; /*Se há 'max-width' sempre deve ter as margin-left e rigth*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicicleta-lista a{
+  display: block;
+}
+
+.bicicleta-lista img{
+  margin-bottom: 16px;
+}
+
+.bicicleta-lista h3{
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bicicleta-lista h3::before{
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+}
+
+.bicicleta-lista li span{
+  padding-left: 20px;
+}
