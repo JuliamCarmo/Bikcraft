@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/* Global */
 @import "./global/global.css";
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/introducao.css";
