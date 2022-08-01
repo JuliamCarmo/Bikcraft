@@ -25,13 +25,32 @@
   background: linear-gradient(#ffb60d, #e59317);
 }
 
-.botao.secundario{
+.botao.secundario {
   background: var(--cor-10);
   color: var(--cor-2);
 }
 
-.botao.secundario:hover{
+.botao.secundario:hover {
   background: var(--cor-9);
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: 00.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
@@ -65,23 +84,23 @@
 
 
 /* Titulo de pg internas */
-.titulo-bg{
+.titulo-bg {
   background-color: var(--cor-11);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.titulo p{
+.titulo p {
   margin-bottom: 4px;
 }
 
-@media (max-width: 800px){
-  .titulo-bg{
+@media (max-width: 800px) {
+  .titulo-bg {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .titulo p{
+  .titulo p {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
