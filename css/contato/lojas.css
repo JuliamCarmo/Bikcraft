@@ -39,6 +39,10 @@
   padding-left: 12px;
 }
 
+.lojas-dados a:hover{
+  color: var(--cor-10);
+}
+
 .lojas-tempo {
   grid-column: 1/-1;
   display: flex;
